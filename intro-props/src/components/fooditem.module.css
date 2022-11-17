@@ -1,0 +1,47 @@
+.foodcard {
+    width: 280px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 20px;
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+    box-shadow: 1px 10px 15px 5px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.foodcard h3,
+h4 {
+    margin: 6px 0;
+}
+
+.foodcard:hover {
+    box-shadow: none;
+    /* transform: scale(0.9); */
+}
+
+.foodcardimg {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+}
+
+.foodcardhead {
+    position: relative;
+}
+
+
+.name-rating {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    margin: 0;
+}
+
+p {
+    margin: 4px 0;
+}
