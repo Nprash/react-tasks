@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  /* margin-top: 50px; */
 }
 
 .App-logo {
@@ -35,4 +36,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App h1{
+  margin: 5px auto;
+  
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 50px;
+}
+.navbar h3{
+  transition: all 4s linear 0s;
+  cursor: pointer;
+  display: inline-block;
+}
+.navbar h3:hover::before{
+  content: "💗";
+  transition: all 3s ease-in-out;
+}
+.navbar h3:hover::after{
+  content: "💗";
+  transition: all 3s ease-in-out;
+
+}
+
+.nav-links{
+  display: flex;
+}
+.link{
+  margin: 0 25px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.link:hover{
+  color: green;
+}
+.btn{
+  text-decoration: none;
+  background: lightblue;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: all 0.3s linear;
+}
+.btn:hover{
+  background: lightgreen;
+  color: #222;
 }
