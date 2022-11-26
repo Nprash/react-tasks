@@ -23,6 +23,7 @@ function App() {
           <FoodItem name={foodItems[0].name} price={foodItems[0].price} ratings={foodItems[0].ratings} image={foodItems[0].img} description = {foodItems[0].descr} />
           <FoodItem name={foodItems[1].name} price={foodItems[1].price} ratings={foodItems[1].ratings} image={foodItems[1].img} description = {foodItems[1].descr}></FoodItem>
           <FoodItem name={foodItems[2].name} price={foodItems[2].price} ratings={foodItems[2].ratings} image={foodItems[2].img} description = {foodItems[2].descr}></FoodItem>
+          <FoodItem name={foodItems[2].name} price={foodItems[2].price} ratings={foodItems[2].ratings} image={foodItems[2].img} description = {foodItems[2].descr}></FoodItem>
         </div>
         {
           foodItems.map((item) => {
