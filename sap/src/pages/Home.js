@@ -1,4 +1,5 @@
 import './Home.css';
+import Hooksexample from '../components/Hooksexample';
 import {Link} from 'react-router-dom'
 import image1 from '../images/image1.png';
 
@@ -10,11 +11,11 @@ function Home() {
                 <div className="subdiv">
                     <h3>Here is the Offer</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled </p>
+                    <Link  to='/Newsletter' className="btnn">Know More</Link>
                 </div>
                 <img src={image1} alt="img" className="image1"/>
-                
-                <Link  to='/Newsletter' className="btnn">Know More</Link>
             </div>
+            <Hooksexample />
             <div className='service-container'>
                 <h2>Services we could offer</h2>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for</p>

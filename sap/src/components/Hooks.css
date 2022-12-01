@@ -1,0 +1,37 @@
+.H-container{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    border:1px dashed;
+    border-radius: 8px;
+    padding: 15px 0;
+    margin: 15px auto;
+    box-shadow: 3px 1px 10px 5px rgba(0,0,0,0.09);
+}
+
+span{
+    color: darkblue;
+}
+.H-container h2{
+    color: orangered;
+    margin: 0;
+}
+.H-container .btns{
+    padding:5px 8px;
+    width: 120px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: auto 10px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.4s ease;
+    box-shadow: 3px 1px 10px 5px rgba(0,0,0,0.09);
+}
+.H-container .btns:hover{
+    background: black;
+    color: white;
+}

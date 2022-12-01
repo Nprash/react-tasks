@@ -1,8 +1,16 @@
 .fortable{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;;
     /* padding: 5px; */
+    height: 100vh;
+    background-color:hsla(0,12%,97%,1);
+    background-image:
+    radial-gradient(at 50% 48%, hsla(189,100%,69%,1) 0px, transparent 50%),
+    radial-gradient(at 100% 97%, hsla(240,0%,100%,1) 0px, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
 }
 .fortable h1{
     color: rgb(132, 30, 183);

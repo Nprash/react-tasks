@@ -38,7 +38,7 @@
   }
 }
 .App h1{
-  margin: 5px auto;
+  margin: 5px 20px;
   
 }
 .navbar{
@@ -64,6 +64,7 @@
 
 .nav-links{
   display: flex;
+  font-size: 18px;
 }
 .link{
   margin: 0 25px;

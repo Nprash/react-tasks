@@ -1,98 +1,110 @@
-.center1{
+.center1 {
     text-align: center;
 }
-.center1 h2{
+
+.center1 h2 {
     color: green;
+    margin: 5px 20px;
 }
-.container{
-    display: grid;
-    grid-template-columns: 3fr 2fr ;
-    /* flex-direction: column; */
-    /* flex-wrap: wrap-reverse; */
-    /* flex-flow: row wrap; */
-    justify-content: center;
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 8px;
-    /* border: 1px solid green; */
-    /* box-shadow: 1px 10px 15px rgba(0,0,0,0.2); */
+
+h1 {
+    margin: 5px 20px;
 }
-.subdiv{
+
+.container {
     display: flex;
-    width: 80%;
+    justify-content: space-between;
+    padding: 25px 20px;
+    border-radius: 8px;
+    background-color:hsla(0,12%,97%,1);
+    background-image:
+    radial-gradient(at 50% 48%, hsla(189,100%,69%,1) 0px, transparent 50%),
+    radial-gradient(at 100% 97%, hsla(240,0%,100%,1) 0px, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+}
+
+.subdiv {
+    display: flex;
+    width: 55%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 15px;
-    margin: 15px;
-    box-shadow: 3px 1px 10px 5px rgba(0,0,0,0.3);
+    font-size: 18px;
+    box-shadow: 3px 1px 30px 5px rgba(0, 0, 0, 0.09);
     border-radius: 8px;
     transition: all 0.8s linear;
+}
 
-}
-.subdiv:hover{
-    box-shadow: none;
-}
-.subdiv h3{
+.subdiv h3 {
     color: orangered;
 }
-.subdiv p{
+
+.subdiv p {
     text-align: center;
 }
-.image1{
+
+.image1 {
+    width: 450px;
+
     transition: all 0.8s linear;
-    box-shadow: 3px 1px 10px 5px rgba(0,0,0,0.3);
-    margin: 15px;
+    box-shadow: 3px 1px 30px 5px rgba(0, 0, 0, 0.09);
+    padding: 15px;
     border-radius: 8px;
 }
-.image1:hover{
-    box-shadow: none;
-    
-}
-.btnn{
-    width: 110px;
+
+.btnn {
     display: inline-block;
-    padding: 10px 6px;
-    margin: 0 auto;
-    border-radius:  8px;
+    padding: 8px 14px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
     font-size: 16px;
     text-decoration: none;
-    outline: 1px solid dodgerblue;
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
     background: transparent;
     transition: all 0.6s linear;
+    box-shadow: 3px 1px 10px 5px rgba(0, 0, 0, 0.09);
+
 }
-.btnn:hover{
+
+.btnn:hover {
     background-color: black;
     color: white;
     outline: none;
 }
-.service-container{
+
+.service-container {
     margin: 40px 20%;
 }
-.service-container p{
+
+.service-container p {
     text-align: start;
 }
-.btn2{
+
+.btn2 {
     width: 90px;
     display: inline-block;
-    padding: 10px 6px;
+    padding: 6px 8px;
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    border-radius:  8px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
-    outline: 1px solid dodgerblue;
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 3px 1px 10px 5px rgba(0, 0, 0, 0.09);
     background: transparent;
     transition: all 0.6s linear;
 }
-.btn2 h4{
+
+.btn2 h4 {
     margin: 0;
 }
-.btn2:hover{
+
+.btn2:hover {
     background-color: black;
     color: white;
     outline: none;
