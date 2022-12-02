@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <h1>welcome to SPA - Single page Application</h1>
+      <h1>welcome to SPA - Single page Application</h1>
 
         <nav className="navbar">
           {/* <Link to = "/" className="link"><h3>Prasanth</h3></Link> */}

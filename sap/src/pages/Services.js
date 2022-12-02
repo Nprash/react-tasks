@@ -19,13 +19,13 @@ function Services(){
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>head Bath</td>
+                    <td>head Massage</td>
                     <td>15minutes</td>
                     <td>200 Rupees</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>head Bath</td>
+                    <td>Body Massage</td>
                     <td>15minutes</td>
                     <td>200 Rupees</td>
                 </tr>
