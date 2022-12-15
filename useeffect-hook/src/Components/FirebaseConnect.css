@@ -1,0 +1,75 @@
+.collect{
+    width: 30%;
+    margin: 10px auto;
+
+}
+fieldset{
+    /* width: 100%; */
+    border: none;
+    border-top: 2px solid dodgerblue;
+}
+
+input{
+    width: 100%;
+    padding: 5px 10px;
+    margin:  10px auto;
+    font-size: 16px;
+    outline:1px solid black;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+input:focus{
+    outline: 1px solid dodgerblue;
+}
+.submitbtn{
+    display: inline-flex;
+    align-items: center;;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background: transparent;
+    border: none;
+    outline: 1px solid black;;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.submitbtn:hover{
+    background: dodgerblue;
+    color: white;
+    outline: none;
+}
+
+.btn-loading {
+    /* border: 16px solid hsl(0, 0%, 95%); */
+    border-radius: 50%;
+    border-top: 3px solid blue;
+    border-right: 3px solid green;
+    border-bottom: 3px solid red;
+    border-left: 3px solid pink;
+    width: 20px;
+    height: 20px;
+    -webkit-animation: spin1 2s linear infinite;
+    animation: spin1 2s linear infinite;
+    display: inline-block;
+    margin-left: 5px;
+}
+@-webkit-keyframes spin1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
