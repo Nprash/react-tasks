@@ -6,7 +6,7 @@ import NotFound from './pages/NotFound';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import "./App.css";
-import Hooksexample from './components/Hooksexample';
+
 
 function App() {
   return (

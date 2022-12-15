@@ -25,6 +25,7 @@ function App() {
           <FoodItem name={foodItems[2].name} price={foodItems[2].price} ratings={foodItems[2].ratings} image={foodItems[2].img} description = {foodItems[2].descr}></FoodItem>
           <FoodItem name={foodItems[2].name} price={foodItems[2].price} ratings={foodItems[2].ratings} image={foodItems[2].img} description = {foodItems[2].descr}></FoodItem>
         </div>
+        
         {
           foodItems.map((item) => {
             return (
@@ -33,7 +34,7 @@ function App() {
           })
         }
 
-
+ 
       </div>
 
     </div>

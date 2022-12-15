@@ -17,15 +17,12 @@ span{
     margin: 0;
 }
 .H-container .btns{
-    padding:5px 8px;
-    width: 120px;
-    height: 30px;
-    align-items: center;
-    justify-content: center;
-    margin: auto 10px;
+    padding:5px 10px;
+    display: inline-block;
     cursor: pointer;
     background: transparent;
     border: none;
+    margin-top: 15px;
     border-radius: 6px;
     font-size: 16px;
     transition: 0.4s ease;

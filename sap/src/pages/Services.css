@@ -1,7 +1,7 @@
 .fortable{
     display: flex;
     flex-direction: column;
-    justify-content: start;;
+    justify-content: flex-start;;
     /* padding: 5px; */
     height: 100vh;
     background-color:hsla(0,12%,97%,1);

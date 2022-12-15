@@ -12,7 +12,7 @@ function FoodItem(props) {
             <div className={styles.foodcardhead}>
                 <img src={props.image} alt="veg burger" className={styles.foodcardimg} />
                 <p className={props.ratings >=4.2 ? "must-try" :"d-none" }>Must Try</p>
-            </div>
+            </div> 
             <div className="name-rating">
             <h4>{props.name}</h4>
             <p>⭐{props.ratings}</p>

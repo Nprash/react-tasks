@@ -1,23 +1,44 @@
+.contactdiv{
+        height: 100vh;
+        background-color:hsla(0,12%,97%,1);
+        background-image:
+        radial-gradient(at 50% 48%, hsla(189,100%,69%,1) 0px, transparent 50%),
+        radial-gradient(at 100% 97%, hsla(240,0%,100%,1) 0px, transparent 50%);
+        background-repeat: no-repeat;
+        background-size: contain;
+        object-fit: cover;
+}
+
+
 .Contact{
     display: flex;
-    justify-content: start;;
-    flex-direction: column;
+    /* grid-template-columns: 2fr, 2fr;  */
+    justify-content:space-around;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     align-items: center;
-    height: 100vh;
-    background-color:hsla(0,12%,97%,1);
-    background-image:
-    radial-gradient(at 50% 48%, hsla(189,100%,69%,1) 0px, transparent 50%),
-    radial-gradient(at 100% 97%, hsla(240,0%,100%,1) 0px, transparent 50%);
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: cover;
+
 }
 
 h2{
     color: brown;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 5px;
+}
+h2 p{
+    background-color: yellow;;
+    width: 280px;
+    margin: 5px auto;
+    border-radius: 10px;
 }
 fieldset{
     width: 500px;
+    padding :0 10px;
+}
+legend{
+    color: rgb(48, 24, 231);
+    font-size: 18PX;
 }
 input{
     width: 100%;
@@ -25,7 +46,9 @@ input{
     border-radius: 4px;
     border: none;
     font-size: medium;
-    /* transition: all 3s linear; */
+    padding: 5px 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
 }
 input:focus{
     outline: 1px solid dodgerblue;
@@ -36,7 +59,9 @@ textarea{
     border-radius: 4px;
     border: none;
     font-size: 16px;
-    /* transition: all 3s linear; */
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin: 10px auto;
 }
 textarea:focus{
     outline: 1px solid dodgerblue;
@@ -58,4 +83,8 @@ textarea:focus{
     background-color: black;
     color: white;
     outline: none;
+}
+.printbill{
+    color: orangered;
+    font-size: 18px;
 }
