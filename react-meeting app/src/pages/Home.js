@@ -4,6 +4,7 @@ import MeetingCard from '../components/MeetingCard';
 import './Home.css';
 
 
+
 const Home = () => {
     const [meetings, setMeetings] = useState([]);
     let [loading, setLoading] = useState(true)
@@ -11,6 +12,7 @@ const Home = () => {
 
     //bookmarked card will be sent/render here at MyMeeting.js component with this use State variable 
     const [bookmarkedMeetings, setBookmarkedMeetings] = useState([]);
+   
 
     useEffect(() => {
         fetch("https://meeting-app-37cd4-default-rtdb.firebaseio.com/meetings.json").then((response) => response.json()).then((data) => {
@@ -29,7 +31,7 @@ const Home = () => {
 
     const handleBookmarkClick = (meeting) => {
         setBookmarkedMeetings([...bookmarkedMeetings, meeting]);
-        
+    
     }
 
     return (
@@ -44,6 +46,9 @@ const Home = () => {
                 <span></span>
             </div>
             <div className='meetingcontainer'>
+
+                
+
                 {
                     // here we will map the meetings hooks in which contains array of objects came from firebase
                     // and will return the meetingCards component by passing the values from hereee to meetingCrd component with props again will render here only
@@ -76,11 +81,11 @@ const Home = () => {
                         return <MeetingCard key={index} handleBookmarkClick={() => handleBookmarkClick(event)} title={event.MeetingTitle} img={event.MeetingImage} time={formattedmeetingtime} desc={event.Meetingdescription} />
                     })// this Meetingcard i want render again at MyMeeting.js component as a bookmarked card,
                     //again this title, img, time,desc will be sent/called at MyMeeting.js as props
-                }
+                }   {/* handleBookmarkClick= {()=>handleBookmarkClick(e)} here RHSide we pass a function inside a function in which declared at line30
+                    as usal we pass e/evenet as paarameter inside this RHS   */}
 
-                {/* handleBookmarkClick= {()=>handleBookmarkClick(e)} here RHSide we pass a function inside a function in which declared at line30
-                as usal we pass e/evenet as paarameter inside this RHS   */}
 
+                    
             </div>
         </>
     )

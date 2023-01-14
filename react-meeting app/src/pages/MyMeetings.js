@@ -10,7 +10,7 @@ const MyMeetings = (props) => {
         <div>
             {
                 props.bookmarkedMeetings.map((event)=>{
-                    return <MeetingCard key={event.id} title={event.title} img={event.img} time={event.time} desc={event.desc}  />
+                    return <MeetingCard key={event.id}  title={event.title} img={event.img} time={event.time} desc={event.desc}  />
                 })
                 
             }

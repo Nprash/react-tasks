@@ -14,8 +14,8 @@ const Addmeetings = () => {
     const meetingdescription = useRef();
     let Navigate = useNavigate();
 
-    const [modal, setModal] = useState(false);
-    const newmodal = document.querySelector(".modal");
+    // const [modal, setModal] = useState(false);
+    // const newmodal = document.querySelector(".modal");
 
 
     function createmeetingHandler() {
@@ -27,29 +27,43 @@ const Addmeetings = () => {
         const schedulefield = meetingschedule.current.value;
         const descriptionfield = meetingdescription.current.value;
         const box = document.querySelector('.checkbox')
-        if (box.checked === true && titlefield !== '' && imagefield !== '' && schedulefield !== '' && descriptionfield !== '') {
-            let formdata = {
-                MeetingTitle: titlefield,
-                MeetingImage: imagefield,
-                MeetingSchedule: schedulefield,
-                Meetingdescription: descriptionfield
-            }
-            fetch('https://meeting-app-37cd4-default-rtdb.firebaseio.com/meetings.json', {
-                method: "post",
-                body: JSON.stringify(formdata)
-            }).then(() => {
-                setSubmitStatus(false);
-                Navigate('/');
-            })
-            
-        } else {
-            window.alert('tick the checkbox')
-            setSubmitStatus(false);
-            setModal(true);
 
-            // above line setModal(!modal) means modal value toggles between true and false, initially it false when I give !modal it alter the value and updates with setModal  
-        
+        //1st if condition checks all the input field should fill if the 1st condition is passed then 2nd if condition
+        //will execute and its subsequent(2nd) else condition also execute;
+        //
+        //if 1st if condition failed it wont execute 2nd if condition ,it goes to its subsequent else condition which 
+        //is last else condition says fil all the input fields
+        if(titlefield !== '' && imagefield !== '' && schedulefield !== '' && descriptionfield !== ''){
+
+            if (box.checked === true){
+                let formdata = {
+                    MeetingTitle: titlefield,
+                    MeetingImage: imagefield,
+                    MeetingSchedule: schedulefield,
+                    Meetingdescription: descriptionfield
+                }
+                fetch('https://meeting-app-37cd4-default-rtdb.firebaseio.com/meetings.json', {
+                    method: "post",
+                    body: JSON.stringify(formdata)
+                }).then(() => {
+                    setSubmitStatus(false);
+                    Navigate('/');
+                })
+                
+            } else {
+                window.alert('tick the checkbox')
+                setSubmitStatus(false);
+                // setModal(true);
+    
+                // above line setModal(!modal) means modal value toggles between true and false, initially it false when I give !modal it alter the value and updates with setModal  
+            
+            }
+
+        }else{
+            window.alert("plz fill all the field");
+            setSubmitStatus(false);
         }
+        
 
     };
 
@@ -85,7 +99,7 @@ const Addmeetings = () => {
                     </div>
                     <button className='btn1' onClick={createmeetingHandler}>Create Meeting <div className={submitStatus ? 'loader1' : 'd-none'}></div> </button>
                     {/* below say if modal is true(&&) then the code follows or executes */}
-                    {modal && (
+                    {/* {modal && (
                         <div className='modal'>
                             <div className='overlay' onClick={createmeetingHandler}>
                                 <div className='modal-content'>
@@ -95,7 +109,7 @@ const Addmeetings = () => {
                                 </div>
                             </div>
                         </div>
-                    )}
+                    )} */}
 
                 </div>
 
