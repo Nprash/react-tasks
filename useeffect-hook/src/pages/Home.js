@@ -26,9 +26,11 @@ const Home = () => {
     return (
         <div>
             { }
-            <h2>This is Home Page Student Details Will Fetch from Firebase </h2>
+            <div class={loading? 'loader' : 'd-none'}>
+
+            </div>
+            <h2 >This is Home Page Student Details Will Fetch from Firebase </h2>
             <div className='username'>
-            <div class={loading? 'loader' : 'd-none'}></div>
                 <table>
                     <tr>
                         <th>S.No</th>
@@ -37,9 +39,9 @@ const Home = () => {
                         <th>Mobile Number</th>
                         <th>Date of Birth</th>
                     </tr>
-                    {
+                    { // firebase data collected in usersvalue hook and stored in collectnames components again rander below
                         usersValue.map((q) => {
-                            return <Collectnames Name={q.Name} Email={q.Email} MobileNumber={q.MobileNumber} dateofbirth = {q.DateofBirth}/>
+                            return <Collectnames SNo ={q.data} Name={q.Name} Email={q.Email} MobileNumber={q.MobileNumber} dateofbirth = {q.DateofBirth}/>
                         })
                     }
                 </table>

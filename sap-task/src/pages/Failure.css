@@ -1,0 +1,17 @@
+.failuremenu{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.failurelinks{
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    background: #d7e3fc;
+    flex-wrap: wrap;
+    margin: 10px;
+}

@@ -7,17 +7,21 @@ import Input from './Input';
 
 
 const Chat = () => {
-    function moreoptions() {
-        alert("Yet to set option to this button");
-    }
+    // function moreoptions.map((e)=>{
+    //     e.current.target.alert("Yet to set option to this button");
+    // }) 
+        function moreoptions(){
+            alert("there is no options set yet ")
+        }
+    
     return (
         <div className='chat'>
             <div className='chatinfo'>
                 <span>Nimmana Prasanth</span>
-                <div className='chatIcons'>
-                    <img src={Cam}  alt="" />
-                    <img src={Add}  alt="" />
-                    <img src={More} onClick={moreoptions} alt="" />
+                <div className='chatIcons' >
+                    <img src={Cam} className="image3"  alt="" />
+                    <img src={Add} className="image3" alt="" />
+                    <img src={More} className="image3" alt="" onClick={moreoptions}/>
                 </div>
             </div>
             <Messages />

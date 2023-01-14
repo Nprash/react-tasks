@@ -1,0 +1,16 @@
+.home{
+    text-align: center;
+    margin: 20px auto;
+    padding: 0 50px;
+}
+.img-text{
+    display: flex;
+    /* width: 80%; */
+    margin: 0 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-text p{
+    width: 50%;
+    text-align: left;
+}
