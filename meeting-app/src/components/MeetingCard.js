@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 import './MeetingCard.css';
 import BookmarksOutlinedIcon from '@mui/icons-material/BookmarksOutlined';
 
@@ -8,7 +8,7 @@ import BookmarksOutlinedIcon from '@mui/icons-material/BookmarksOutlined';
 const MeetingCard = (props) => {
 
     //bookmarked card will be sent/render here at MyMeeting.js component with this use State variable 
-    const [bookmarkedMeetings, setBookmarkedMeetings] = useState([]);
+    // const [bookmarkedMeetings, setBookmarkedMeetings] = useState([]);
     
 
     return (

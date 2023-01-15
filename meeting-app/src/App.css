@@ -311,3 +311,24 @@ textarea:focus {
         display:none;
     }
 } */
+
+.gitlogo{
+    /* position:sticky; */
+    width: 100%;
+    /* height: calc(100%-95%); */
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    align-items: center;
+}
+.gitlogo img{
+    width: 40px;
+    height: 40px;
+    color: #2222;
+    /* background: #2222; */
+}
+.gitlogo p{
+    margin: 0;
+    padding-inline-start: 20px;
+}
